@@ -25,7 +25,7 @@ const page = () => {
     renderTask = mainTask.map((t, i) => {
       return (
         <li key={i} className='flex items-center justify-between mb-8'>
-          <div className='flex flex-col sm:flex-row justify-between mb-5 w-2/3'>
+          <div className='flex flex-row sm:flex-row justify-between mb-5 w-2/3'>
             <h5 className='text-2xl font-semibold'>{t.title}</h5>
             <h6 className='text-lg font-medium'>{t.desc}</h6>
           </div>
@@ -47,7 +47,7 @@ const page = () => {
       <form onSubmit={submitHandler}>
         <input
           type='text'
-          className='text-2xl border-zinc-800 border-2 m-5 px-4 py-2'
+            className='text-2xl border-zinc-800 border-2 m-5 px-4 py-2 sm:w-2/3'
           placeholder='Enter Task here'
           value={title}
           onChange={(e) => {
@@ -56,7 +56,7 @@ const page = () => {
         />
         <input
           type='text'
-          className='text-2xl border-zinc-800 border-2 m-5 px-4 py-2'
+          className='text-2xl border-zinc-800 border-2 m-5 px-4 py-2 sm:w-2/3'
           placeholder='Enter Description  here'
           value={desc}
           onChange={(e) => {
