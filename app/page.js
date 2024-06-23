@@ -40,11 +40,12 @@ const page = () => {
   }
   return (
     <>
-    <h1 className='bg-black text-white p-5 text-5xl font-bold text-center'>My Todo List</h1>
+    <h1 className='bg-black text-white p-5 text-5xl font-bold text-center 
+    sm:w-fit w-auto'>My Todo List</h1>
     <form onSubmit={submitHandler}>
       <input type='text' 
       className='text-2xl border-zinc-800 border-2 m-5 
-      px-4 py-2'
+      px-4 py-2 sm:w-fit w-auto'
       placeholder='Enter Task here'
       value={title}
       onChange={(e)=>{
@@ -53,7 +54,7 @@ const page = () => {
       />
       <input type='text' 
       className='text-2xl border-zinc-800 border-2 m-5 
-      px-4 py-2'
+      px-4 py-2 sm:w-fit w-auto'
       placeholder='Enter Description  here'
       value={desc}
       onChange={(e)=>{
@@ -63,7 +64,7 @@ const page = () => {
       <button className='bg-black text-white px-4 py-3 text-2xl font-bold rounded m-5'>Add Task</button>
     </form>
     <hr/>
-    <div className='p-8 bg-slate-300'>
+    <div className='w-full sm:w-full p-8 bg-slate-300'>
       <ul>{renderTask}</ul>
     </div>
     </>
