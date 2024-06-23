@@ -26,14 +26,14 @@ const page = () => {
       return (
         <li key={i} className='flex items-center justify-between mb-8'>
           <div className='flex justify-between mb-5 w-2/3'>
-          <h5 className='text-2xl font-semibold'>{t.title}</h5>
-          <h6 className='text-lg font-medium'>{t.desc}</h6>
+          <h5 className='text:xl sm:text-2xl font-semibold'>{t.title}</h5>
+          <h6 className='text:xl sm:text-2xl font-medium'>{t.desc}</h6>
         </div>
         <button
         onClick={()=>{
           deleteHandler(i)
         }} 
-        className='bg-red-400 text-white px-4 py-2 rounded font-bold'>Delete</button>
+        className='bg-red-400 text-white px-2 py-1 mb-5 ml-2 sm:px-4 sm:py-2 rounded font-bold'>Delete</button>
         </li>
       );
     })
@@ -44,7 +44,7 @@ const page = () => {
     sm:w-full w-full'>My Todo List</h1>
     <form onSubmit={submitHandler}>
       <input type='text' 
-      className='text-2xl border-zinc-800 border-2 m-5 
+      className='text-xl sm:text-2xl border-zinc-800 border-2 m-5 
       px-4 py-2 sm:w-auto w-auto'
       placeholder='Enter Task here'
       value={title}
@@ -53,8 +53,8 @@ const page = () => {
       }}
       />
       <input type='text' 
-      className='text-2xl border-zinc-800 border-2 m-5 
-      px-4 py-2 w-auto sm:w-auto'
+      className='text-xl sm:text-2xl border-zinc-800 border-2 m-5 
+      px-4 py-2 w-21 sm:w-auto'
       placeholder='Enter Description  here'
       value={desc}
       onChange={(e)=>{
