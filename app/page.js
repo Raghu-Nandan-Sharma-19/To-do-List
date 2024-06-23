@@ -33,7 +33,7 @@ const page = () => {
             onClick={() => {
               deleteHandler(i)
             }}
-            className='bg-red-400 text-white px-4 py-2 rounded font-bold'
+            className='bg-red-400 text-white px-4 py-2 rounded font-bold mb-5'
           >
             Delete
           </button>
