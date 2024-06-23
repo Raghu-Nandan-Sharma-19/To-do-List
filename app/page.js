@@ -45,7 +45,7 @@ const page = () => {
     <form onSubmit={submitHandler}>
       <input type='text' 
       className='text-2xl border-zinc-800 border-2 m-5 
-      px-4 py-2 sm:w-fit w-auto'
+      px-4 py-2 sm:w-auto w-auto'
       placeholder='Enter Task here'
       value={title}
       onChange={(e)=>{
@@ -54,7 +54,7 @@ const page = () => {
       />
       <input type='text' 
       className='text-2xl border-zinc-800 border-2 m-5 
-      px-4 py-2 sm:w-fit w-auto'
+      px-4 py-2 sm:w-auto w-auto'
       placeholder='Enter Description  here'
       value={desc}
       onChange={(e)=>{
