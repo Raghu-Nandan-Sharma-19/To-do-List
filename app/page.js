@@ -47,7 +47,7 @@ const page = () => {
       <form onSubmit={submitHandler}>
         <input
           type='text'
-            className='text-xl sm:text-xl border-zinc-800 border-2 m-5 px-4 py-2 w-2/3'
+            className='text-lg sm:text-2xl border-zinc-800 border-2 m-5 px-4 py-2 w-2/3'
           placeholder='Enter Task here'
           value={title}
           onChange={(e) => {
@@ -56,8 +56,8 @@ const page = () => {
         />
         <input
           type='text'
-          className='text-xl sm:text-xl border-zinc-800 border-2 m-5 px-4 py-2 w-2/3'
-          placeholder='Enter Description  here'
+          className='text-lg sm:text-2xl border-zinc-800 border-2 m-5 px-4 py-2 w-2/3'
+          placeholder='Enter Description here'
           value={desc}
           onChange={(e) => {
             setdesc(e.target.value)
