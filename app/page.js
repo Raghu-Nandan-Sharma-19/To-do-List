@@ -41,7 +41,7 @@ const page = () => {
   return (
     <>
     <h1 className='bg-black text-white p-5 text-5xl font-bold text-center 
-    sm:w-fit w-auto'>My Todo List</h1>
+    sm:w-full w-full'>My Todo List</h1>
     <form onSubmit={submitHandler}>
       <input type='text' 
       className='text-2xl border-zinc-800 border-2 m-5 
@@ -54,7 +54,7 @@ const page = () => {
       />
       <input type='text' 
       className='text-2xl border-zinc-800 border-2 m-5 
-      px-4 py-2 sm:w-auto w-auto'
+      px-4 py-2 w-auto sm:w-auto'
       placeholder='Enter Description  here'
       value={desc}
       onChange={(e)=>{
